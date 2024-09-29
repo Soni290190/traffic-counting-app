@@ -4,10 +4,11 @@ body {
     font-family: Arial, sans-serif;
     
    
-    background-color: #000000; /* warna hitam sebagai fallback jika gambar tidak muncul */
- 
-    
+    body {
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
     background-size: cover;
+}
+
 }
 
 .container {
