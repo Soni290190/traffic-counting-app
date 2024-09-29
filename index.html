@@ -17,10 +17,46 @@
             <h2><i class="fas fa-car"></i> Data Traffic Counting</h2> <!-- Ikon mobil -->
             <p><i class="fas fa-road"></i> Selamat datang di aplikasi Traffic Counting KBB. Pantau dan hitung jumlah kendaraan yang lewat di berbagai lokasi strategis!</p> <!-- Ikon jalan -->
         </section>
+
+        <!-- Tombol Login -->
+        <div class="login-section">
+            <button class="login-btn" onclick="toggleLogin()">Login</button>
+        </div>
+
+        <!-- Modal Login -->
+        <div id="login-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="toggleLogin()">&times;</span>
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Traffic Counting KBB</p>
     </footer>
+
+    <script>
+        // Function to toggle the login modal
+        function toggleLogin() {
+            var modal = document.getElementById("login-modal");
+            modal.style.display = modal.style.display === "block" ? "none" : "block";
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            var modal = document.getElementById("login-modal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
