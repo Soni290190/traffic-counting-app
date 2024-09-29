@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Counting KBB - Animasi Kendaraan</title>
+    <title>Traffic Counting KBB - Login & Animasi</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,10 +17,34 @@
             <div class="car"></div>
             <div class="bus"></div>
         </div>
+
+        <!-- Button Login -->
+        <div class="login-section">
+            <button class="login-btn" id="openLogin">Login</button>
+        </div>
+
+        <!-- Modal Login -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeLogin">&times;</span>
+                <h2>Login</h2>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="username">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password">
+                </div>
+                <button id="loginButton">Login</button>
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Traffic Counting KBB</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
