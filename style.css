@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #001f3f, #0074D9); /* Gradien biru tua ke biru muda */
+    background: linear-gradient(135deg, #001f3f, #0074D9);
     color: #fff;
     text-align: center;
 }
@@ -30,7 +30,7 @@ main h2 {
 }
 
 main i {
-    margin-right: 10px; /* Spasi antara ikon dan teks */
+    margin-right: 10px;
 }
 
 /* Style untuk footer */
@@ -59,6 +59,7 @@ footer p {
     font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .login-btn:hover {
@@ -77,27 +78,54 @@ footer p {
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    animation: fadeIn 0.3s ease;
 }
 
+/* Modal Content */
 .modal-content {
     background-color: white;
     color: black;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
-    max-width: 300px;
+    width: 350px;
     margin: auto;
+    position: relative;
+    animation: slideDown 0.3s ease;
 }
 
 .modal-content h2 {
     margin-top: 0;
+    color: #001f3f;
 }
 
-.modal-content input {
-    width: 100%;
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
     padding: 10px;
-    margin: 10px 0;
+    border-radius: 5px;
 }
 
+.input-group i {
+    margin-right: 10px;
+    color: #0074D9;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: none;
+    font-size: 1em;
+}
+
+.input-group input::placeholder {
+    color: #ccc;
+}
+
+/* Submit Button */
 .modal-content button {
     padding: 10px;
     width: 100%;
@@ -107,16 +135,38 @@ footer p {
     font-size: 1em;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .modal-content button:hover {
     background-color: #005bb5;
 }
 
-/* Close button */
+/* Close Button */
 .close {
-    color: black;
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 1.5em;
     cursor: pointer;
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
