@@ -1,65 +1,43 @@
+/* Style untuk seluruh halaman */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    
-   
-    body {
-    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
-    background-size: cover;
-}
-
-}
-
-.container {
+    background: linear-gradient(135deg, #001f3f, #0074D9); /* Gradien biru tua ke biru muda */
+    color: #fff;
     text-align: center;
-    padding: 50px;
-    color: white;
 }
 
-h1 {
-    font-size: 50px;
+/* Style untuk header */
+header {
+    background-color: #001f3f;
+    padding: 20px;
 }
 
-h3 {
-    font-size: 20px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
+/* Style untuk konten utama */
+main {
+    padding: 20px;
 }
 
-.menu-item {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    margin: 20px;
-    padding: 30px;
-    width: 150px;
-    transition: background 0.3s;
+main h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.menu-item:hover {
-    background: rgba(255, 255, 255, 0.3);
+/* Style untuk footer */
+footer {
+    background-color: #001f3f;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.menu-item img {
-    width: 50px;
-    height: 50px;
-}
-
-.menu-item p {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-.footer {
-    margin-top: 50px;
-}
-
-.footer img {
-    width: 30px;
-    margin: 0 10px;
+footer p {
+    margin: 0;
 }
